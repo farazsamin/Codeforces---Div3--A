@@ -1,0 +1,22 @@
+/*
+Problem Link 	: 
+
+
+Approach 		: Logic applied according to the question. 
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long int 
+ 
+ 
+int main() {
+    int t,x,y,n;
+	cin>>t;
+	while(t--)
+	{
+		cin>>x>>y>>n;
+		cout<<n-((n-y)%x)<<endl;
+	}
+  
+}
