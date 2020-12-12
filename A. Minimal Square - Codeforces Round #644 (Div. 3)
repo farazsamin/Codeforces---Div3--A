@@ -1,0 +1,22 @@
+/*
+Problem Link 	: https://codeforces.com/problemset/problem/1360/A
+
+
+Approach 		:   We can get the square by two ways : max(2a,b) and max(2b,a) so they can touch each other. Minimum of this values are the answer.
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long int 
+ 
+ 
+int main() {
+   int t,a,b;
+   cin>>t;
+   while(t--){
+   	cin>>a>>b;
+   	int ans = min(max(2*a,b),max(2*b,a));
+   	cout<<ans*ans<<endl;
+   }
+  
+}
