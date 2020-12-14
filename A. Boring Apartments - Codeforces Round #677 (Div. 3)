@@ -1,0 +1,22 @@
+/*
+Problem Link 	: https://codeforces.com/problemset/problem/1433/A
+
+
+Approach 		  : As total step in completing a series is =10 . So count the series has finished and count the steps present series also(n*n+1/2). then print it.
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+    	string s;
+    	cin>>s;
+    	int prev = s[0]-'0'- 1;
+		int length =s.size();
+		cout <<prev*10+length*(length+1)/2<< endl;
+	}
+}
