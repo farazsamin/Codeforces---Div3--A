@@ -1,0 +1,22 @@
+/*
+Problem Link 	:  https://codeforces.com/problemset/problem/1283/A
+
+
+Approach 		  :   Covert the time to minutes . then substract it from total minutes in a day.
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main(){
+    int t,h,m;
+    cin>>t;
+    while(t--){
+    	cin>>h>>m;
+    	int min= (h*60) +m;
+    	cout<< (24*60) - min<<endl;
+    	
+	}
+    
+}
