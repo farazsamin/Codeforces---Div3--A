@@ -1,0 +1,25 @@
+/*
+Link      :  https://codeforces.com/problemset/problem/1077/A
+
+
+Approach  :  Jumps to the right and left.ans is (a-b) .(k/2). ans will be added by a if k is odd as one right move will remain.
+
+
+ 
+*/
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main(){
+    long long a,b,t,k;
+    cin>>t;
+    while(t--){
+    long long ans=0;
+	cin>>a>>b>>k;
+	if(k%2) ans+=a;
+	ans+=(a-b)*1ll*(k/2);
+	cout<<ans<<endl;	  
+    }
+
+}
