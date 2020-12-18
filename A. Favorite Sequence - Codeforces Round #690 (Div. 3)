@@ -1,0 +1,39 @@
+/*
+Link      :  https://codeforces.com/problemset/problem/1462/A
+
+
+Approach  :  Using two pointer method .push the number in a vector .
+
+
+ 
+*/
+#include<bits/stdc++.h>
+using namespace std;
+ 
+ 
+int main(){
+   int t,n;
+   cin>>t;
+   while(t--){
+   	  cin>>n;
+   	  int arr[n];
+   	  vector<int>v;
+   	  for(int i=0;i<n;i++) cin>>arr[i];
+   	  int start=0,end=n-1;
+   	  for(int i=0;i<n;i++){
+  			if(i%2==0){
+			    v.push_back(arr[start]);
+				start++;
+			}else {
+			    v.push_back(arr[end]);
+				end--;
+			} 
+	  }
+	  for(int i=0;i<v.size();i++) cout<<v[i]<<" ";
+	  cout<<endl;
+	  
+   }
+   
+}
+
+
